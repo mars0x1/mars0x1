@@ -1,4 +1,4 @@
-# Marcel Samer Malaeb
+# Marcel  Malaeb
 
 **Communication & Electronics Engineering (CCE) Student @ Beirut Arab University (BAU)**  
 *Low-Level Systems • Binary Reverse Engineering • Firmware & Embedded Security • RF Engineering*
