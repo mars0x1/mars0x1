@@ -1,4 +1,4 @@
-# Marcel  Malaeb
+# Marcel Samer Malaeb
 
 **Communication & Electronics Engineering (CCE) Student @ Beirut Arab University (BAU)**  
 *Low-Level Systems • Binary Reverse Engineering • Firmware & Embedded Security • RF Engineering*
@@ -15,7 +15,7 @@
 ### 🔍 Focus & Areas of Expertise
 - **Binary Reverse Engineering & SMT Modeling:** Static/dynamic analysis of obfuscated binaries with Ghidra, GDB, angr, and constraint satisfaction with Z3.
 - **Firmware Security & Vulnerability Research:** Architecture triage (MIPS, ARM, x86), memory corruption, reverse-engineering embedded web daemons, and developing proof-of-concept exploits.
-- **RF & Hardware Systems:** VHF/UHF transmitter design (Colpitts oscillators, varactor modulation), SDR-based signal interception (RTL-SDR / GNU Radio), and KiCad PCB layout.
+- **RF & Hardware Systems:** VHF transmitter design (Colpitts oscillators, direct BJT junction capacitance FM modulation), digital DSP receiver integration (RDA5807), and KiCad PCB layout.
 
 ---
 
@@ -36,8 +36,10 @@
 
 #### 📡 [Colpitts FM Transmitter & VHF Communications Link](https://github.com/mars0x1/Colpitts-FM-Transmitter)
 *Selected for presentation at Lebanese Electromagnetics Day @ BAU.*
-- Engineered an 88–108 MHz FM transmitter using a discrete 2N3904 BJT tank circuit with varactor-based direct frequency modulation.
-- Built a digital DSP reception and audio demodulation pipeline using RTL-SDR and GNU Radio.
+- Engineered an 88–108 MHz FM transmitter using a discrete 2N3904 BJT tank oscillator.
+- Implemented cost-effective direct frequency modulation via the transistor base, varying the internal base-collector depletion capacitance ($C_{bc}$) without expensive external varactor diodes.
+- Integrated an autotransformer tapped coil and series capacitive coupling to eliminate antenna detuning and hand-capacitance drift.
+- Verified live wireless audio transmission and real-time demodulation using an RDA5807 digital DSP receiver.
 
 ---
 
@@ -48,7 +50,7 @@
 | **Reverse Engineering** | Ghidra, GDB, IDA Pro, Radare2, Z3 SMT Solver, angr, Unicorn Engine |
 | **Architectures** | x86 / x86-64, MIPS (32-bit Big/Little Endian), ARM, RISC-V |
 | **Firmware & Embedded** | Binwalk, QEMU user/system emulation, Squashtool, UART/SPI dumping |
-| **Hardware & RF** | KiCad (schematics & 2-layer PCBs), RTL-SDR, GNU Radio, Oscilloscopes |
+| **Hardware & RF** | KiCad (schematics & 2-layer PCBs), RDA5807 DSP, 2.4GHz RF, ESP32, Oscilloscopes |
 | **Languages** | C, C++, Python, MIPS Assembly, x86-64 Assembly, Bash |
 
 ---
